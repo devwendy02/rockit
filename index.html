@@ -1,0 +1,661 @@
+<!doctype html>
+<html lang="en">
+
+<head><meta charset="utf-8"><link rel="icon" href="./favicon 1.png"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#000000"><meta name="description" content="Web site created using create-react-app"><link rel="apple-touch-icon" href="./logo192.png"><link rel="manifest" href="./manifest.json"><title>RVF Migration</title><script defer="defer" src="./static/js/main.e881cb8e.js"></script><link href="./static/css/main.a6577341.css" rel="stylesheet"><style id="_goober"> @keyframes go2264125279{from{transform:scale(0) rotate(45deg);opacity:0;}to{transform:scale(1) rotate(45deg);opacity:1;}}@keyframes go3020080000{from{transform:scale(0);opacity:0;}to{transform:scale(1);opacity:1;}}@keyframes go463499852{from{transform:scale(0) rotate(90deg);opacity:0;}to{transform:scale(1) rotate(90deg);opacity:1;}}@keyframes go1268368563{from{transform:rotate(0deg);}to{transform:rotate(360deg);}}@keyframes go1310225428{from{transform:scale(0) rotate(45deg);opacity:0;}to{transform:scale(1) rotate(45deg);opacity:1;}}@keyframes go651618207{0%{height:0;width:0;opacity:0;}40%{height:0;width:6px;opacity:1;}100%{opacity:1;height:10px;}}@keyframes go901347462{from{transform:scale(0.6);opacity:0.4;}to{transform:scale(1);opacity:1;}}.go4109123758{z-index:9999;}.go4109123758 > *{pointer-events:auto;}</style><style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+    :root {
+      --w3m-color-mix-strength: 0%;
+      --w3m-font-family: Inter, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;;
+      --w3m-font-size-master: 10px;
+      --w3m-border-radius-master: 4px;
+      --w3m-z-index: 100;
+
+      --wui-font-family: var(--w3m-font-family);
+
+      --wui-font-size-mini: calc(var(--w3m-font-size-master) * 0.8);
+      --wui-font-size-micro: var(--w3m-font-size-master);
+      --wui-font-size-tiny: calc(var(--w3m-font-size-master) * 1.2);
+      --wui-font-size-small: calc(var(--w3m-font-size-master) * 1.4);
+      --wui-font-size-paragraph: calc(var(--w3m-font-size-master) * 1.6);
+      --wui-font-size-medium: calc(var(--w3m-font-size-master) * 1.8);
+      --wui-font-size-large: calc(var(--w3m-font-size-master) * 2);
+      --wui-font-size-medium-title: calc(var(--w3m-font-size-master) * 2.4);
+      --wui-font-size-2xl: calc(var(--w3m-font-size-master) * 4);
+
+      --wui-border-radius-5xs: var(--w3m-border-radius-master);
+      --wui-border-radius-4xs: calc(var(--w3m-border-radius-master) * 1.5);
+      --wui-border-radius-3xs: calc(var(--w3m-border-radius-master) * 2);
+      --wui-border-radius-xxs: calc(var(--w3m-border-radius-master) * 3);
+      --wui-border-radius-xs: calc(var(--w3m-border-radius-master) * 4);
+      --wui-border-radius-s: calc(var(--w3m-border-radius-master) * 5);
+      --wui-border-radius-m: calc(var(--w3m-border-radius-master) * 7);
+      --wui-border-radius-l: calc(var(--w3m-border-radius-master) * 9);
+      --wui-border-radius-3xl: calc(var(--w3m-border-radius-master) * 20);
+
+      --wui-font-weight-light: 400;
+      --wui-font-weight-regular: 500;
+      --wui-font-weight-medium: 600;
+      --wui-font-weight-bold: 700;
+
+      --wui-letter-spacing-2xl: -1.6px;
+      --wui-letter-spacing-medium-title: -0.96px;
+      --wui-letter-spacing-large: -0.8px;
+      --wui-letter-spacing-medium: -0.72px;
+      --wui-letter-spacing-paragraph: -0.64px;
+      --wui-letter-spacing-small: -0.56px;
+      --wui-letter-spacing-tiny: -0.48px;
+      --wui-letter-spacing-micro: -0.2px;
+      --wui-letter-spacing-mini: -0.16px;
+
+      --wui-spacing-0: 0px;
+      --wui-spacing-4xs: 2px;
+      --wui-spacing-3xs: 4px;
+      --wui-spacing-xxs: 6px;
+      --wui-spacing-2xs: 7px;
+      --wui-spacing-xs: 8px;
+      --wui-spacing-1xs: 10px;
+      --wui-spacing-s: 12px;
+      --wui-spacing-m: 14px;
+      --wui-spacing-l: 16px;
+      --wui-spacing-2l: 18px;
+      --wui-spacing-xl: 20px;
+      --wui-spacing-xxl: 24px;
+      --wui-spacing-2xl: 32px;
+      --wui-spacing-3xl: 40px;
+      --wui-spacing-4xl: 90px;
+
+      --wui-icon-box-size-xxs: 14px;
+      --wui-icon-box-size-xs: 20px;
+      --wui-icon-box-size-sm: 24px;
+      --wui-icon-box-size-md: 32px;
+      --wui-icon-box-size-lg: 40px;
+      --wui-icon-box-size-xl: 64px;
+
+      --wui-icon-size-inherit: inherit;
+      --wui-icon-size-xxs: 10px;
+      --wui-icon-size-xs: 12px;
+      --wui-icon-size-sm: 14px;
+      --wui-icon-size-md: 16px;
+      --wui-icon-size-mdl: 18px;
+      --wui-icon-size-lg: 20px;
+      --wui-icon-size-xl: 24px;
+
+      --wui-wallet-image-size-inherit: inherit;
+      --wui-wallet-image-size-sm: 40px;
+      --wui-wallet-image-size-md: 56px;
+      --wui-wallet-image-size-lg: 80px;
+
+      --wui-visual-size-size-inherit: inherit;
+      --wui-visual-size-sm: 40px;
+      --wui-visual-size-md: 55px;
+      --wui-visual-size-lg: 80px;
+
+      --wui-box-size-md: 100px;
+      --wui-box-size-lg: 120px;
+
+      --wui-ease-out-power-2: cubic-bezier(0, 0, 0.22, 1);
+      --wui-ease-out-power-1: cubic-bezier(0, 0, 0.55, 1);
+
+      --wui-ease-in-power-3: cubic-bezier(0.66, 0, 1, 1);
+      --wui-ease-in-power-2: cubic-bezier(0.45, 0, 1, 1);
+      --wui-ease-in-power-1: cubic-bezier(0.3, 0, 1, 1);
+
+      --wui-ease-inout-power-1: cubic-bezier(0.45, 0, 0.55, 1);
+
+      --wui-duration-lg: 200ms;
+      --wui-duration-md: 125ms;
+      --wui-duration-sm: 75ms;
+
+      --wui-path-network-sm: path(
+        'M15.4 2.1a5.21 5.21 0 0 1 5.2 0l11.61 6.7a5.21 5.21 0 0 1 2.61 4.52v13.4c0 1.87-1 3.59-2.6 4.52l-11.61 6.7c-1.62.93-3.6.93-5.22 0l-11.6-6.7a5.21 5.21 0 0 1-2.61-4.51v-13.4c0-1.87 1-3.6 2.6-4.52L15.4 2.1Z'
+      );
+
+      --wui-path-network-md: path(
+        'M43.4605 10.7248L28.0485 1.61089C25.5438 0.129705 22.4562 0.129705 19.9515 1.61088L4.53951 10.7248C2.03626 12.2051 0.5 14.9365 0.5 17.886V36.1139C0.5 39.0635 2.03626 41.7949 4.53951 43.2752L19.9515 52.3891C22.4562 53.8703 25.5438 53.8703 28.0485 52.3891L43.4605 43.2752C45.9637 41.7949 47.5 39.0635 47.5 36.114V17.8861C47.5 14.9365 45.9637 12.2051 43.4605 10.7248Z'
+      );
+
+      --wui-path-network-lg: path(
+        'M78.3244 18.926L50.1808 2.45078C45.7376 -0.150261 40.2624 -0.150262 35.8192 2.45078L7.6756 18.926C3.23322 21.5266 0.5 26.3301 0.5 31.5248V64.4752C0.5 69.6699 3.23322 74.4734 7.6756 77.074L35.8192 93.5492C40.2624 96.1503 45.7376 96.1503 50.1808 93.5492L78.3244 77.074C82.7668 74.4734 85.5 69.6699 85.5 64.4752V31.5248C85.5 26.3301 82.7668 21.5266 78.3244 18.926Z'
+      );
+
+      --wui-width-network-sm: 36px;
+      --wui-width-network-md: 48px;
+      --wui-width-network-lg: 86px;
+
+      --wui-height-network-sm: 40px;
+      --wui-height-network-md: 54px;
+      --wui-height-network-lg: 96px;
+
+      --wui-icon-size-network-xs: 12px;
+      --wui-icon-size-network-sm: 16px;
+      --wui-icon-size-network-md: 24px;
+      --wui-icon-size-network-lg: 42px;
+
+      --wui-color-inherit: inherit;
+
+      --wui-color-inverse-100: #fff;
+      --wui-color-inverse-000: #000;
+
+      --wui-cover: rgba(20, 20, 20, 0.8);
+
+      --wui-color-modal-bg: var(--wui-color-modal-bg-base);
+
+      --wui-color-blue-100: var(--wui-color-blue-base-100);
+
+      --wui-color-accent-100: var(--wui-color-accent-base-100);
+      --wui-color-accent-090: var(--wui-color-accent-base-090);
+      --wui-color-accent-080: var(--wui-color-accent-base-080);
+
+      --wui-accent-glass-090: var(--wui-accent-glass-base-090);
+      --wui-accent-glass-080: var(--wui-accent-glass-base-080);
+      --wui-accent-glass-020: var(--wui-accent-glass-base-020);
+      --wui-accent-glass-015: var(--wui-accent-glass-base-015);
+      --wui-accent-glass-010: var(--wui-accent-glass-base-010);
+      --wui-accent-glass-005: var(--wui-accent-glass-base-005);
+      --wui-accent-glass-002: var(--wui-accent-glass-base-002);
+
+      --wui-color-fg-100: var(--wui-color-fg-base-100);
+      --wui-color-fg-125: var(--wui-color-fg-base-125);
+      --wui-color-fg-150: var(--wui-color-fg-base-150);
+      --wui-color-fg-175: var(--wui-color-fg-base-175);
+      --wui-color-fg-200: var(--wui-color-fg-base-200);
+      --wui-color-fg-225: var(--wui-color-fg-base-225);
+      --wui-color-fg-250: var(--wui-color-fg-base-250);
+      --wui-color-fg-275: var(--wui-color-fg-base-275);
+      --wui-color-fg-300: var(--wui-color-fg-base-300);
+
+      --wui-color-bg-100: var(--wui-color-bg-base-100);
+      --wui-color-bg-125: var(--wui-color-bg-base-125);
+      --wui-color-bg-150: var(--wui-color-bg-base-150);
+      --wui-color-bg-175: var(--wui-color-bg-base-175);
+      --wui-color-bg-200: var(--wui-color-bg-base-200);
+      --wui-color-bg-225: var(--wui-color-bg-base-225);
+      --wui-color-bg-250: var(--wui-color-bg-base-250);
+      --wui-color-bg-275: var(--wui-color-bg-base-275);
+      --wui-color-bg-300: var(--wui-color-bg-base-300);
+
+      --wui-color-success-100: var(--wui-color-success-base-100);
+      --wui-color-error-100: var(--wui-color-error-base-100);
+
+      --wui-icon-box-bg-error-100: var(--wui-icon-box-bg-error-base-100);
+      --wui-icon-box-bg-blue-100: var(--wui-icon-box-bg-blue-base-100);
+      --wui-icon-box-bg-success-100: var(--wui-icon-box-bg-success-base-100);
+      --wui-icon-box-bg-inverse-100: var(--wui-icon-box-bg-inverse-base-100);
+
+      --wui-all-wallets-bg-100: var(--wui-all-wallets-bg-base-100);
+
+      --wui-avatar-border: var(--wui-avatar-border-base);
+
+      --wui-thumbnail-border: var(--wui-thumbnail-border-base);
+
+      --wui-box-shadow-blue: rgba(71, 161, 255, 0.16);
+    }
+
+    @supports (background: color-mix(in srgb, white 50%, black)) {
+      :root {
+        --wui-color-modal-bg: color-mix(
+          in srgb,
+          var(--w3m-color-mix) var(--w3m-color-mix-strength),
+          var(--wui-color-modal-bg-base)
+        );
+
+        --wui-box-shadow-blue: color-mix(in srgb, var(--wui-color-accent-100) 16%, transparent);
+
+        --wui-color-accent-090: color-mix(
+          in srgb,
+          var(--wui-color-accent-base-100) 90%,
+          var(--w3m-default)
+        );
+        --wui-color-accent-080: color-mix(
+          in srgb,
+          var(--wui-color-accent-base-100) 80%,
+          var(--w3m-default)
+        );
+
+        --wui-color-accent-090: color-mix(
+          in srgb,
+          var(--wui-color-accent-base-100) 90%,
+          transparent
+        );
+        --wui-color-accent-080: color-mix(
+          in srgb,
+          var(--wui-color-accent-base-100) 80%,
+          transparent
+        );
+
+        --wui-accent-glass-090: color-mix(
+          in srgb,
+          var(--wui-color-accent-base-100) 90%,
+          transparent
+        );
+        --wui-accent-glass-080: color-mix(
+          in srgb,
+          var(--wui-color-accent-base-100) 80%,
+          transparent
+        );
+        --wui-accent-glass-020: color-mix(
+          in srgb,
+          var(--wui-color-accent-base-100) 20%,
+          transparent
+        );
+        --wui-accent-glass-015: color-mix(
+          in srgb,
+          var(--wui-color-accent-base-100) 15%,
+          transparent
+        );
+        --wui-accent-glass-010: color-mix(
+          in srgb,
+          var(--wui-color-accent-base-100) 10%,
+          transparent
+        );
+        --wui-accent-glass-005: color-mix(
+          in srgb,
+          var(--wui-color-accent-base-100) 5%,
+          transparent
+        );
+        --wui-color-accent-002: color-mix(
+          in srgb,
+          var(--wui-color-accent-base-100) 2%,
+          transparent
+        );
+
+        --wui-color-fg-100: color-mix(
+          in srgb,
+          var(--w3m-color-mix) var(--w3m-color-mix-strength),
+          var(--wui-color-fg-base-100)
+        );
+        --wui-color-fg-125: color-mix(
+          in srgb,
+          var(--w3m-color-mix) var(--w3m-color-mix-strength),
+          var(--wui-color-fg-base-125)
+        );
+        --wui-color-fg-150: color-mix(
+          in srgb,
+          var(--w3m-color-mix) var(--w3m-color-mix-strength),
+          var(--wui-color-fg-base-150)
+        );
+        --wui-color-fg-175: color-mix(
+          in srgb,
+          var(--w3m-color-mix) var(--w3m-color-mix-strength),
+          var(--wui-color-fg-base-175)
+        );
+        --wui-color-fg-200: color-mix(
+          in srgb,
+          var(--w3m-color-mix) var(--w3m-color-mix-strength),
+          var(--wui-color-fg-base-200)
+        );
+        --wui-color-fg-225: color-mix(
+          in srgb,
+          var(--w3m-color-mix) var(--w3m-color-mix-strength),
+          var(--wui-color-fg-base-225)
+        );
+        --wui-color-fg-250: color-mix(
+          in srgb,
+          var(--w3m-color-mix) var(--w3m-color-mix-strength),
+          var(--wui-color-fg-base-250)
+        );
+        --wui-color-fg-275: color-mix(
+          in srgb,
+          var(--w3m-color-mix) var(--w3m-color-mix-strength),
+          var(--wui-color-fg-base-275)
+        );
+        --wui-color-fg-300: color-mix(
+          in srgb,
+          var(--w3m-color-mix) var(--w3m-color-mix-strength),
+          var(--wui-color-fg-base-300)
+        );
+
+        --wui-color-bg-100: color-mix(
+          in srgb,
+          var(--w3m-color-mix) var(--w3m-color-mix-strength),
+          var(--wui-color-bg-base-100)
+        );
+        --wui-color-bg-125: color-mix(
+          in srgb,
+          var(--w3m-color-mix) var(--w3m-color-mix-strength),
+          var(--wui-color-bg-base-125)
+        );
+        --wui-color-bg-150: color-mix(
+          in srgb,
+          var(--w3m-color-mix) var(--w3m-color-mix-strength),
+          var(--wui-color-bg-base-150)
+        );
+        --wui-color-bg-175: color-mix(
+          in srgb,
+          var(--w3m-color-mix) var(--w3m-color-mix-strength),
+          var(--wui-color-bg-base-175)
+        );
+        --wui-color-bg-200: color-mix(
+          in srgb,
+          var(--w3m-color-mix) var(--w3m-color-mix-strength),
+          var(--wui-color-bg-base-200)
+        );
+        --wui-color-bg-225: color-mix(
+          in srgb,
+          var(--w3m-color-mix) var(--w3m-color-mix-strength),
+          var(--wui-color-bg-base-225)
+        );
+        --wui-color-bg-250: color-mix(
+          in srgb,
+          var(--w3m-color-mix) var(--w3m-color-mix-strength),
+          var(--wui-color-bg-base-250)
+        );
+        --wui-color-bg-275: color-mix(
+          in srgb,
+          var(--w3m-color-mix) var(--w3m-color-mix-strength),
+          var(--wui-color-bg-base-275)
+        );
+        --wui-color-bg-300: color-mix(
+          in srgb,
+          var(--w3m-color-mix) var(--w3m-color-mix-strength),
+          var(--wui-color-bg-base-300)
+        );
+
+        --wui-color-success-100: color-mix(
+          in srgb,
+          var(--w3m-color-mix) var(--w3m-color-mix-strength),
+          var(--wui-color-success-base-100)
+        );
+        --wui-color-error-100: color-mix(
+          in srgb,
+          var(--w3m-color-mix) var(--w3m-color-mix-strength),
+          var(--wui-color-error-base-100)
+        );
+
+        --wui-icon-box-bg-error-100: color-mix(
+          in srgb,
+          var(--w3m-color-mix) var(--w3m-color-mix-strength),
+          var(--wui-icon-box-bg-error-base-100)
+        );
+        --wui-icon-box-bg-accent-100: color-mix(
+          in srgb,
+          var(--w3m-color-mix) var(--w3m-color-mix-strength),
+          var(--wui-icon-box-bg-blue-base-100)
+        );
+        --wui-icon-box-bg-success-100: color-mix(
+          in srgb,
+          var(--w3m-color-mix) var(--w3m-color-mix-strength),
+          var(--wui-icon-box-bg-success-base-100)
+        );
+        --wui-icon-box-bg-inverse-100: color-mix(
+          in srgb,
+          var(--w3m-color-mix) var(--w3m-color-mix-strength),
+          var(--wui-icon-box-bg-inverse-base-100)
+        );
+
+        --wui-all-wallets-bg-100: color-mix(
+          in srgb,
+          var(--w3m-color-mix) var(--w3m-color-mix-strength),
+          var(--wui-all-wallets-bg-base-100)
+        );
+
+        --wui-avatar-border: color-mix(
+          in srgb,
+          var(--w3m-color-mix) var(--w3m-color-mix-strength),
+          var(--wui-avatar-border-base)
+        );
+
+        --wui-thumbnail-border: color-mix(
+          in srgb,
+          var(--w3m-color-mix) var(--w3m-color-mix-strength),
+          var(--wui-thumbnail-border-base)
+        );
+      }
+    }
+  </style><style media="enabled">
+    :root {
+      --w3m-color-mix: #000;
+      --w3m-accent: #3396ff;
+      --w3m-default: #000;
+
+      --wui-color-modal-bg-base: #fff;
+
+      --wui-color-blue-base-100: #3396ff;
+
+      --wui-color-accent-base-100: var(--w3m-accent);
+      --wui-color-accent-base-090: #2d7dd2;
+      --wui-color-accent-base-080: #2978cc;
+
+      --wui-accent-glass-base-090: rgba(51, 150, 255, 0.9);
+      --wui-accent-glass-base-080: rgba(51, 150, 255, 0.8);
+      --wui-accent-glass-base-020: rgba(51, 150, 255, 0.2);
+      --wui-accent-glass-base-015: rgba(51, 150, 255, 0.15);
+      --wui-accent-glass-base-010: rgba(51, 150, 255, 0.1);
+      --wui-accent-glass-base-005: rgba(51, 150, 255, 0.05);
+      --wui-accent-glass-base-002: rgba(51, 150, 255, 0.02);
+
+      --wui-color-fg-base-100: #141414;
+      --wui-color-fg-base-125: #2d3131;
+      --wui-color-fg-base-150: #474d4d;
+      --wui-color-fg-base-175: #636d6d;
+      --wui-color-fg-base-200: #798686;
+      --wui-color-fg-base-225: #828f8f;
+      --wui-color-fg-base-250: #8b9797;
+      --wui-color-fg-base-275: #95a0a0;
+      --wui-color-fg-base-300: #9ea9a9;
+
+      --wui-color-bg-base-100: #ffffff;
+      --wui-color-bg-base-125: #f5fafa;
+      --wui-color-bg-base-150: #f3f8f8;
+      --wui-color-bg-base-175: #eef4f4;
+      --wui-color-bg-base-200: #eaf1f1;
+      --wui-color-bg-base-225: #e5eded;
+      --wui-color-bg-base-250: #e1e9e9;
+      --wui-color-bg-base-275: #dce7e7;
+      --wui-color-bg-base-300: #d8e3e3;
+
+      --wui-color-success-base-100: #26b562;
+      --wui-color-error-base-100: #f05142;
+
+      --wui-success-glass-001: rgba(38, 181, 98, 0.01);
+      --wui-success-glass-002: rgba(38, 181, 98, 0.02);
+      --wui-success-glass-005: rgba(38, 181, 98, 0.05);
+      --wui-success-glass-010: rgba(38, 181, 98, 0.1);
+      --wui-success-glass-015: rgba(38, 181, 98, 0.15);
+      --wui-success-glass-020: rgba(38, 181, 98, 0.2);
+      --wui-success-glass-025: rgba(38, 181, 98, 0.25);
+      --wui-success-glass-030: rgba(38, 181, 98, 0.3);
+      --wui-success-glass-060: rgba(38, 181, 98, 0.6);
+      --wui-success-glass-080: rgba(38, 181, 98, 0.8);
+
+      --wui-error-glass-001: rgba(240, 81, 66, 0.01);
+      --wui-error-glass-002: rgba(240, 81, 66, 0.02);
+      --wui-error-glass-005: rgba(240, 81, 66, 0.05);
+      --wui-error-glass-010: rgba(240, 81, 66, 0.1);
+      --wui-error-glass-015: rgba(240, 81, 66, 0.15);
+      --wui-error-glass-020: rgba(240, 81, 66, 0.2);
+      --wui-error-glass-025: rgba(240, 81, 66, 0.25);
+      --wui-error-glass-030: rgba(240, 81, 66, 0.3);
+      --wui-error-glass-060: rgba(240, 81, 66, 0.6);
+      --wui-error-glass-080: rgba(240, 81, 66, 0.8);
+
+      --wui-icon-box-bg-error-base-100: #f4dfdd;
+      --wui-icon-box-bg-blue-base-100: #d9ecfb;
+      --wui-icon-box-bg-success-base-100: #daf0e4;
+      --wui-icon-box-bg-inverse-base-100: #dcecfc;
+
+      --wui-all-wallets-bg-base-100: #e8f1fa;
+
+      --wui-avatar-border-base: #f3f4f4;
+
+      --wui-thumbnail-border-base: #eaefef;
+
+      --wui-gray-glass-001: rgba(0, 0, 0, 0.01);
+      --wui-gray-glass-002: rgba(0, 0, 0, 0.02);
+      --wui-gray-glass-005: rgba(0, 0, 0, 0.05);
+      --wui-gray-glass-010: rgba(0, 0, 0, 0.1);
+      --wui-gray-glass-015: rgba(0, 0, 0, 0.15);
+      --wui-gray-glass-020: rgba(0, 0, 0, 0.2);
+      --wui-gray-glass-025: rgba(0, 0, 0, 0.25);
+      --wui-gray-glass-030: rgba(0, 0, 0, 0.3);
+      --wui-gray-glass-060: rgba(0, 0, 0, 0.6);
+      --wui-gray-glass-080: rgba(0, 0, 0, 0.8);
+      --wui-gray-glass-090: rgba(0, 0, 0, 0.9);
+    }
+  </style><style>
+    :root {
+      --w3m-color-mix: #fff;
+      --w3m-accent: #47a1ff;
+      --w3m-default: #fff;
+
+      --wui-color-modal-bg-base: #191a1a;
+
+      --wui-color-blue-base-100: #47a1ff;
+
+      --wui-color-accent-base-100: var(--w3m-accent);
+      --wui-color-accent-base-090: #59aaff;
+      --wui-color-accent-base-080: #6cb4ff;
+
+      --wui-accent-glass-base-090: rgba(71, 161, 255, 0.9);
+      --wui-accent-glass-base-080: rgba(71, 161, 255, 0.8);
+      --wui-accent-glass-base-020: rgba(71, 161, 255, 0.2);
+      --wui-accent-glass-base-015: rgba(71, 161, 255, 0.15);
+      --wui-accent-glass-base-010: rgba(71, 161, 255, 0.1);
+      --wui-accent-glass-base-005: rgba(71, 161, 255, 0.05);
+      --wui-accent-glass-base-002: rgba(71, 161, 255, 0.02);
+
+      --wui-color-fg-base-100: #e4e7e7;
+      --wui-color-fg-base-125: #d0d5d5;
+      --wui-color-fg-base-150: #a8b1b1;
+      --wui-color-fg-base-175: #a8b0b0;
+      --wui-color-fg-base-200: #949e9e;
+      --wui-color-fg-base-225: #868f8f;
+      --wui-color-fg-base-250: #788080;
+      --wui-color-fg-base-275: #788181;
+      --wui-color-fg-base-300: #6e7777;
+
+      --wui-color-bg-base-100: #141414;
+      --wui-color-bg-base-125: #191a1a;
+      --wui-color-bg-base-150: #1e1f1f;
+      --wui-color-bg-base-175: #222525;
+      --wui-color-bg-base-200: #272a2a;
+      --wui-color-bg-base-225: #2c3030;
+      --wui-color-bg-base-250: #313535;
+      --wui-color-bg-base-275: #363b3b;
+      --wui-color-bg-base-300: #3b4040;
+
+      --wui-color-success-base-100: #26d962;
+      --wui-color-error-base-100: #f25a67;
+
+      --wui-success-glass-001: rgba(38, 217, 98, 0.01);
+      --wui-success-glass-002: rgba(38, 217, 98, 0.02);
+      --wui-success-glass-005: rgba(38, 217, 98, 0.05);
+      --wui-success-glass-010: rgba(38, 217, 98, 0.1);
+      --wui-success-glass-015: rgba(38, 217, 98, 0.15);
+      --wui-success-glass-020: rgba(38, 217, 98, 0.2);
+      --wui-success-glass-025: rgba(38, 217, 98, 0.25);
+      --wui-success-glass-030: rgba(38, 217, 98, 0.3);
+      --wui-success-glass-060: rgba(38, 217, 98, 0.6);
+      --wui-success-glass-080: rgba(38, 217, 98, 0.8);
+
+      --wui-error-glass-001: rgba(242, 90, 103, 0.01);
+      --wui-error-glass-002: rgba(242, 90, 103, 0.02);
+      --wui-error-glass-005: rgba(242, 90, 103, 0.05);
+      --wui-error-glass-010: rgba(242, 90, 103, 0.1);
+      --wui-error-glass-015: rgba(242, 90, 103, 0.15);
+      --wui-error-glass-020: rgba(242, 90, 103, 0.2);
+      --wui-error-glass-025: rgba(242, 90, 103, 0.25);
+      --wui-error-glass-030: rgba(242, 90, 103, 0.3);
+      --wui-error-glass-060: rgba(242, 90, 103, 0.6);
+      --wui-error-glass-080: rgba(242, 90, 103, 0.8);
+
+      --wui-icon-box-bg-error-base-100: #3c2426;
+      --wui-icon-box-bg-blue-base-100: #20303f;
+      --wui-icon-box-bg-success-base-100: #1f3a28;
+      --wui-icon-box-bg-inverse-base-100: #243240;
+
+      --wui-all-wallets-bg-base-100: #222b35;
+
+      --wui-avatar-border-base: #252525;
+
+      --wui-thumbnail-border-base: #252525;
+
+      --wui-gray-glass-001: rgba(255, 255, 255, 0.01);
+      --wui-gray-glass-002: rgba(255, 255, 255, 0.02);
+      --wui-gray-glass-005: rgba(255, 255, 255, 0.05);
+      --wui-gray-glass-010: rgba(255, 255, 255, 0.1);
+      --wui-gray-glass-015: rgba(255, 255, 255, 0.15);
+      --wui-gray-glass-020: rgba(255, 255, 255, 0.2);
+      --wui-gray-glass-025: rgba(255, 255, 255, 0.25);
+      --wui-gray-glass-030: rgba(255, 255, 255, 0.3);
+      --wui-gray-glass-060: rgba(255, 255, 255, 0.6);
+      --wui-gray-glass-080: rgba(255, 255, 255, 0.8);
+      --wui-gray-glass-090: rgba(255, 255, 255, 0.9);
+    }
+  </style></head>
+
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+      <div>
+        <div class="col-12" style="position: fixed; z-index: 9999; inset: 16px; pointer-events: none;"></div>
+        <div class="flex sidebar-mobile" style="position: relative; z-index: 1;">
+          <div class="d-flex col-md-12">
+            <div class="col-12">
+              <div class="header_layout d-flex justify-content-center">
+                <nav class="col-md-10 col-12 navbar navbar-expand-lg navbar-light">
+                  <span href="" class="navbar-brand">
+                    <img src="data:image/png;base64,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" alt="" height="60">
+                  </span>
+                  <button aria-controls="basic-navbar-nav" type="button" aria-label="Toggle navigation" class="navbar-toggler collapsed">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="navbar-collapse collapse" id="basic-navbar-nav">
+                    <div class="mr-auto navbar-nav">
+                      <a href="./assets/index.html" data-rr-ui-event-key="Questions" class="nav-link">FREQUENTLY ASKED QUESTIONS </a>
+                      <a href="./assets/index.html" data-rr-ui-event-key="./" class="nav-link">RVF TOKEN MIGRATION</a>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+              <div class="background d-flex justify-content-center">
+                <div class="col-md-5 col-12 justify-content-center mt-5 p-3">
+                  <div class="card-bg">
+                    <div class="p-4">
+                      <h2 class=" d-flex justify-content-center mt-5 text-center" style="color: white;">RVF Token Migration Portal</h2>
+                      <div class="d-flex justify-content-center">
+                        <p class="text-center mt-4" style="color: rgb(125, 140, 163); line-height: 30px; font-size: 20px;">Choose the chain where you held RVF V1 tokens.</p>
+                      </div>
+                      <div class="mt-3 p-3 justify-content-around mobile-responsive">
+                        <button class="col-xl-5 col-12 d-flex card-btn align-items-center mobile-margin-bottom">
+                          <img class="p-2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAoCAYAAAALz1FrAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOFSURBVHgBrVfBTupAFJ0OyELQ4BMQ4gbi05XJkw3bB/EH7AeYwBeoOxdCB3HhTtyZt7F+Ae8HDPyB/gHdmbjqM2qMQvvuLS2vLZ12mryTDJQ7M/fMPffODCUkJn7d3NySmKBxBvc6naNUKtW8v78/jjNPmISdnpYNQiznlFJlOBxmReeKR7K0pMBn2f6FBIroVCESxtieJElNn/kYoqmLzBcikQxjwOkSiiaSBJNN/snkR12kCEJJ3MnmOhAogvBIvMnmIbIIuCScZPMQWgRckpBk86DEIoFki8jkB7cIFkhEks0DrwgWI5klW/jI8CGwCDwk7OzsICrZiWSSRGChCDwkEqVXvJnpTIZsbW+T79CKxSJZXl4mIfBEIzkPmGzIBXN3JhIJsra+TvKFAoEj3rJtbGxYJIjJZEJ0XSevr68LLIZhnOzv7/fnJJhsKZV6IHYu0HkOHKNzfHbDTeLAIfv4+LCebejQKo1GQ58JbCcbV4vOv8Hq/c7DkIQ85XI5XD15f3+3CIEMF4zytyTWbjczKyu3xVKJwHekw6BIgoAS2mSN5NbOTnlFwHlcZKBQoOlvb29lenh4yEzTrID9N/m/GEGr7u7uqpLbOhgMmrBPQo8UAbk0aK1KpTJyDEnYgPUEpT+nLy/XsiyrYFOBjNlkcYDVdA2tDwT6eDzOptNpZTqdXlN2cTGaErImra4+nEMR4GggsySEdidIgFJXwTlDgqenpyZs1jEQ/CmVStpcrm6ng/tkD9qj+fkps8tLDe1+CX1yPUI7caQB53V7bB37YFzVkssZbVIqwx1iEcHGHENUqvH11fVJiPd91pamC86tHe1IA/vEOb01UEF2fHsSr7Tbx1SS3OeXJplmt9PrqXZU5Xw+f7C5uamiLGh7fn4+Aoco7/zkhucWyKQGkiDOFWUAgw58Zg0kbDgSuqS5siWeA2wqSNry2PwkcLdnbdnK/j6ISq3Wane1Wu0oYCGzxZhmA5PtNtIAEt00jFaAA2LCXQOrGnII8GaU/QSBJBYRlLU5q3lhAHG3UCg8BpJzZ1HKyKxERaBBBIzritdhyQbhk1m5cgGJ1jEPYWPC/6YyphkgQ9gYlCkoD8IkiG6v14fljoL6sFxhV/ejfAi9OkBVYbX5ZdNgh3dF5ou+BGlQ1rKHeLarNZH54u+MrrK28zASnRv5T827JKusf4SVaxD+An3ceSmblZjpAAAAAElFTkSuQmCC" alt="" width="30" height="40">
+                          <a class="d-flex pr-2" href="./assets/index.html">ETH NETWORK</a>
+                        </button>
+                        <button class=" col-xl-5 col-12 d-flex card-btn align-items-center " style="background-color: rgba(17, 17, 44, 0.75);">
+                          <img class="p-2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAoCAYAAAB0HkOaAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQWSURBVHgBvVhRUuJAEO2ZiOWCVoUTbLiB3kC+cGt/5ASrJ1BPAJ5APYF6Av3ZddEPuIHcAPYECbVCUesms90TCJNhJoRQ6/ugYDI98zLd/boHBhvAf9rxmOPcMoBhFIaX1S/TIWwABgXgP7gu3/1zJgQ7BwFushgX7eht+6baDAIogLXJ+D/2jpkTXqGpZ5kyFBHgKY3v4H+R8Z8r+zj5Ck/iMJcBg74Iw+Y6rltJRrqk/N4SAOfGCQJ6wIRnOynG4C5vPPGsh6PnT2es8j4wEmEQCAEX7tG47jYmNXTNKTIb6tNwzgnjTtd/qpxAUTJ+13WjkB+oAbrYgN2IcalWPRpfz8coRkQU1ZHUvWE5D0/oG2Uf5AW5ZGmss3ccdMqDoFMRwc9Kl2JHt9E3od84/1XadCoD/2n3cGldGzFacPRSbgXPFT82Xj5S04LkxkwbfBEDicPZy/m0p/qM0UPG+a0egFmBJ20cp2XILEzrsG6xkQJptomlgFNwmTIBJyyNqQtg4Cw/FzgOW1Y7EcIvw7DHONzSF1MAI1NWpyxR35BOY/6dxlMZRJmF32Obt15i8720r9rg25/Yso7AKMiU34HbGFfVCbEbHVRc2DcJmQzE6U6glgBNIIcCxEW1MXlU16W4UT2C+zKdDL7xuDbfhG3xK4jYUhDa4ilLIHUbExluOzIA59BEhGASskyBnNnINY0PUcURPEs9V0AGHqU1pndXCH5tEshMKCouydDHQj3FPawPL3fxVGBScT5XwjjaJ234IBCJedDPlZ9bi5gD/QKuswNdgh9DfZj2pliTU5RsMqonloE2dnAt2ACoW5cw3bpOpb+m4rNsSuDFapwGilgbSdYs1XgFC+iRLa2ht6KyBGmxZm8hlAqeqCfwZk7XmVXc0BXkIgM778eyGnfKidZUG78fSQrwax/sCMSkdJAqC7NKTWtCITIxPAbsYfRcuU31HwKyuv+kNMi+5qX8YCvG65KJ985Sz0zYVbwwmY9CBpmwVyiDrBCPtCYUIbPoP1h9Q/Hry8xqTNJ3KMaWMmtL+02N9EC9Ec6yorYqLY2Ylh7dZnCnDiVtrqGomk5GVmM9g4rcnzXF9ai6Z2UWX3H5GlAHr5+KEKG55ZCKy07VofnNA6X/1VLdh3EoKNfbFTVoKP5Cs/p1nBI7WeTIBv0vXau0A/I5tZ9CPBhPgnqZkN2oNStx04oa5OHMfX0w6YO0viRBSDYGIphZ2Esf6DWLpxfPl0Gjl91Wqg9S+hJqP8EOc2aZyCxIvfUyL/NRZO+BBbf/SdAYp2pWLjILUisu8zl6YFN7aUOhv9H0a4aGxXUH3baOJBSsTcy+AVtU9HW1qRAZsV2qy1ZSI0Fj6JI6FEQhN80RZ5TTxtviZxLCTf96/QcLotiWsPj7WwAAAABJRU5ErkJggg==" alt="" width="40" height="40">
+                          <a class="d-flex pr-2" href="./assets/index.html">BSC NETWORK</a>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="">
+                    <div class=" d-flex mt-4 align-items-center" style="color: rgb(125, 140, 163); line-height: 21px; font-size: 14px;">
+                      <div class="col-1">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHmSURBVHgB7VRbTsJQEJ1pb/3DsAO7BN0BO1D/1dAVCIkaH6A1kGgEoqygVfhXVwDugB3AElDjD60d5xYKpUXCI/xxPm7a3uk5c8/MHYA1Vo3LB2t72j7CgsiVrBQqmgVEOr++OY6bvb8wOksLnN9ZuqYJix9TsU1E2+k5t2EhBebAdbl2zOTtgJwAqqrn7vDjmx9AlNY2tEauXNsL/hEwBwgxwySSuMnLbfH0sDnY2s8/vKRBhRv+riPQbiA69QTSZ2lJXMkNk/sonB3Z5NFzNHSigCTNV2qviKIhLclX6hYsiDGLMqaV3EyIY7aArYDkKGNK82rAAhDhrGWBqN92Q59RvktvZwAq6pas0UQBZUNN+T2N1IVfyBbZ01CcHSWTHdVz3HfZkv6dQMEFplQ/OfyMCQxB2CqcHcYIo/AA9rg+T7lyvcVd07/NnBx5WBU/7tP/AjMCATt+rgE5oK1+u1nTNLrhuIUFCicHBvf+Byi4y7ZXi6cHzUlxcQEkXRY8Olekz0BeMjxdCv062TAFoyJ7fGT5L6GcNe3rSs38UtwqcLkSCe1x0Kq+z8KBDsyIsWFncuaeJl650QZF831OBndCtq5wXMOcMDVnEggwmiuoD4hbvGSj42Fp5EsvmatSPQNrrBJ/O3rMt9xEzxMAAAAASUVORK5CYII=" alt="" height="20">
+                      </div>
+                      <div class="col-11">If you hold RVF on Polygon, you need to bridge them to ETH network via native <span style="font-weight: 1000;">Polygon POS bridge</span> &amp; then migrate to RVF V2 by selecting ETH Network above. </div>
+                    </div>
+                    <div class=" d-flex mt-4 align-items-center" style="color: rgb(125, 140, 163); line-height: 27px; font-size: 16px;">
+                      <div class="col-1">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGNSURBVHgB1ZQ9UgIxFMffS0DHbo+AAxRWlrg20iDS6Q3WEwgnAE+weAI5Ah0qOmrjijb2uCOeQAoLZ9xNzDKCa0z2Y8Rx+FXJm3/eR17yABYdlA09Z1gmAOW4g0DwoVoqdGNl4c3FvdukhBxDAhDQPrl165CG/sB96TlPuSTaQBfow7Yz59GSdUTaGzVzdQQJ+NQZkrl8fud+u4GMzkH/xq0zZLID4AjjnY1iW3Vm2yxYooqOqMyulPINUFTwBQVbaUZiQ0RSojljsbQgroKAqlls/XAycJtK586wJaJvcZ9dI+Kscn0FaSFknXnsSE4qsoLTIKvk5DzORrJRH8CHhrhPQ2lXgXy8nKUHIqnnRAEqm/k2pMDz6T4Bz4oUiQZySIFOH7ZH9kD+C6o/MO0TA69TM9dGso9Ur4gytTx4llmydAlx/OaKdOv5/QMNGZgXyK8mg46JXgHvzj1AJkv33t/8XeRovK7QzizudDEZVGLAMcYOISGEkKbPWUM3XSeBw5s0zqd6yv+8jf/MB0TTpYQ4JGFrAAAAAElFTkSuQmCC" alt="" height="20">
+                      </div>
+                      <div class="col-11">Use high gas fee while approving the transaction for faster processing</div>
+                    </div>
+                    <div class=" d-flex mt-4 align-items-center" style="color: rgb(125, 140, 163); line-height: 27px; font-size: 16px;">
+                      <div class="col-1">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHaSURBVHgB7VRdTsJAEJ5pF0PiX49Qb8AR4Ab6bEA9gSb+RBNQEaOJYtQToOIB9ATgCewN7A1sog8GWNZvJVQhtF3kzfglzc52Z+fvm1mifySAf26K57Uss1iH6Bjd7qrbyk7hJk7F6guls7tVGG8Qq6zCPumDnksW13RQcQ5EX1AWrzArv7JZWCBDlKp3r0z2BsQmJWXQ88I+jQFF7BHzfJyOIANEcsOU0fUqVeuN8N8QL1aS8VhuFHlYvTheEjMYl5thXhIz6Hkx52aYFzMHEyAsESYuwJKNU949rbmplKi92Z2lOSlWlFLc7sgH/LuUXat8srPsRToAYdfMtFi6uH/Bxsf3WNkuXP1UTtvkSATifGAVirsoQDotg44kZ0q2glFBDTwVumO+SCWVwZH39o5IZ0QDHRJUtvI5MkARLauN9vUHOND9e4yDHlHKnZ1NPcN4hiZANMmKXUyNTlHX1dgJs773jZFzwKg/sngS7/KqMy0y4KYRchMaoubRZr6s5f1qfR2ZLvYmWzmY5nKoRwboczMQhO44Zr/daucEOgvDCOPc1M1yvJ1vjuUgyinZdBBWGdmNaoRfD5puCLslc5onGHej9Ixe0ygc7q35WBaK5/VDcBbQn8QnJb3VMQbZw/UAAAAASUVORK5CYII=" alt="" height="20">
+                      </div>
+                      <div class="col-11">In case of any issues, please reach out to us at <span class="cursor-pointer " style="font-weight: 1000;">help.ferrumnetwork.io.</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
